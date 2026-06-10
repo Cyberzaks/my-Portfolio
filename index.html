@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zakariyya Abdullahi - Computer Science Student, Web Developer & AI Developer. I build modern websites, AI-powered applications, and digital solutions.">
+    <meta name="keywords" content="Web Developer, AI Developer, Portfolio, Computer Science, HTML, CSS, JavaScript">
+    <meta name="author" content="Zakariyya Abdullahi">
+    <meta name="theme-color" content="#0a0e27">
+    <title>Zakariyya Abdullahi | Web Developer & AI Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Zakariyya</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-title">Zakariyya Abdullahi</h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text">Computer Science Student</span>
+                </p>
+                <p class="hero-description">
+                    I build modern websites, AI-powered applications, and digital solutions that help businesses, schools, and individuals achieve their goals through technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="javascript:void(0)" class="btn btn-secondary" onclick="alert('CV Download - Prepare your CV file')">Download CV</a>
+                    <a href="#contact" class="btn btn-tertiary">Contact Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Cyberzaks" target="_blank" class="social-link" title="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:Zakarabduharbo@gmail.com" class="social-link" title="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/234802258816" target="_blank" class="social-link" title="WhatsApp">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.98 1.505 9.881 9.881 0 00-3.287 2.963 9.889 9.889 0 00-2.154 4.11 9.87 9.87 0 00-.627 4.85 9.842 9.842 0 00.996 3.823 9.878 9.878 0 002.324 3.115 9.887 9.887 0 003.471 2.166 9.86 9.86 0 004.64.902h.003a9.87 9.87 0 004.988-1.505 9.882 9.882 0 003.287-2.963 9.888 9.888 0 002.154-4.11 9.87 9.87 0 00.627-4.85 9.84 9.84 0 00-.996-3.823 9.878 9.878 0 00-2.324-3.115 9.887 9.887 0 00-3.471-2.166 9.858 9.858 0 00-4.639-.902m0-1.002c.6 0 1.201.05 1.802.15 2.257.31 4.366 1.25 6.065 2.76 1.699 1.51 2.843 3.407 3.235 5.505.392 2.099.26 4.309-.39 6.335-.65 2.025-1.8 3.913-3.323 5.338-1.523 1.425-3.35 2.376-5.334 2.754-1.983.378-4.055.26-6.007-.35-1.951-.608-3.749-1.74-5.127-3.277-1.378-1.537-2.318-3.36-2.704-5.325-.386-1.965-.268-4.044.348-6.037.616-1.993 1.71-3.817 3.162-5.27 1.451-1.453 3.27-2.531 5.27-3.143 1.999-.612 4.073-.737 6.097-.37"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="floating-icons">
+                    <div class="floating-icon icon-1">💻</div>
+                    <div class="floating-icon icon-2">🚀</div>
+                    <div class="floating-icon icon-3">🤖</div>
+                    <div class="floating-icon icon-4">✨</div>
+                </div>
+                <img src="images/hero-profile.jpg" alt="Zakariyya Abdullahi" class="hero-image">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get To Know Me</h2>
+                <p>Learn more about my background and passion</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-item">
+                        <h3>Computer Science Student</h3>
+                        <p>Pursuing knowledge in computer science with a focus on web development and artificial intelligence.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>Passionate Developer</h3>
+                        <p>Dedicated to creating innovative solutions and staying current with the latest technologies and industry trends.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>AI & Automation Expert</h3>
+                        <p>Experienced in AI-assisted development, prompt engineering, and building intelligent automation solutions.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>Solution Creator</h3>
+                        <p>Creator of educational platforms and business web solutions that solve real-world problems.</p>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <h3>Core Strengths</h3>
+                    <ul class="highlights-list">
+                        <li><span class="checkmark">✔</span> Problem Solving</li>
+                        <li><span class="checkmark">✔</span> Web Development</li>
+                        <li><span class="checkmark">✔</span> AI Application Development</li>
+                        <li><span class="checkmark">✔</span> Continuous Learning</li>
+                        <li><span class="checkmark">✔</span> Project Building</li>
+                    </ul>
+                    <p class="about-cta">
+                        Open to internships, collaborations, and freelance opportunities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <h3>Frontend Development</h3>
+                        <span class="skill-icon">🎨</span>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML5</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CSS3</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Modern UI Design</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Development -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <h3>AI & Automation</h3>
+                        <span class="skill-icon">🤖</span>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">Prompt Engineering</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">OpenAI Integration</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Gemini Integration</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">AI App Development</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Workflow Automation</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <h3>Tools & Platforms</h3>
+                        <span class="skill-icon">⚙️</span>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">VS Code</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Netlify</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 86%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Vercel</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Web Development</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Showcase of my best work and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/mailalle-academy.jpg" alt="Mailalle Tech Academy Hub">
+                        <div class="project-overlay">
+                            <a href="javascript:void(0)" class="project-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mailalle Tech Academy Hub</h3>
+                        <p>A modern school management website featuring admissions, academics, student life, gallery, staff management, news updates, and responsive user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0)" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                View Project
+                            </a>
+                            <a href="https://github.com/Cyberzaks/mailalle-academy-hub" target="_blank" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>🤖 AI Academic Assistant</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="javascript:void(0)" class="project-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal AI Academic Assistant</h3>
+                        <p>An AI-powered academic assistant that helps students with learning, assignments, study planning, research, productivity, and academic success.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">AI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0)" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                View Project
+                            </a>
+                            <a href="https://github.com/Cyberzaks/personal-ai-academic-assistant" target="_blank" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder github-placeholder">
+                            <span>📦 More Projects</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Cyberzaks" target="_blank" class="project-btn">View All</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Explore More Projects</h3>
+                        <p>Visit my GitHub profile to explore more projects, experiments, code samples, and innovative software solutions I've developed.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">Open Source</span>
+                            <span class="tech-tag">Portfolio</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cyberzaks" target="_blank" class="project-link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services</h2>
+                <p>Solutions I offer to help you succeed</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Website Development</h3>
+                    <p>Custom, responsive websites built with modern technologies for optimal performance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏫</div>
+                    <h3>School Website Development</h3>
+                    <p>Educational websites with student portals, management systems, and engaging interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Portfolio Websites</h3>
+                    <p>Professional portfolios that showcase your work and attract opportunities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Business Websites</h3>
+                    <p>Corporate websites designed to enhance your brand and drive business growth.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Landing Pages</h3>
+                    <p>High-converting landing pages optimized for lead generation and conversions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI Integration</h3>
+                    <p>Integrate AI-powered features into your applications for enhanced functionality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Website Redesign</h3>
+                    <p>Modern redesigns that update outdated websites with contemporary design trends.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Technical Support</h3>
+                    <p>Ongoing support and maintenance to keep your website running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Journey</h2>
+                <p>Progress and accomplishments</p>
+            </div>
+            <div class="achievement-counters">
+                <div class="counter">
+                    <div class="counter-number" data-target="2">0</div>
+                    <div class="counter-label">Featured Projects</div>
+                </div>
+                <div class="counter">
+                    <div class="counter-number" data-target="10">0</div>
+                    <div class="counter-label">Technologies Mastered</div>
+                </div>
+                <div class="counter">
+                    <div class="counter-number" data-target="8">0</div>
+                    <div class="counter-label">Services Offered</div>
+                </div>
+                <div class="counter">
+                    <div class="counter-number" data-target="100">0</div>
+                    <div class="counter-label">% Dedication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section id="why-me" class="why-me">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Work With Me</h2>
+                <p>What sets me apart from other developers</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon">💬</div>
+                    <h3>Professional Communication</h3>
+                    <p>Clear, transparent communication throughout the entire project lifecycle with regular updates.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">✍️</div>
+                    <h3>Clean Code</h3>
+                    <p>Well-structured, maintainable code following industry best practices and standards.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">📱</div>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that look perfect on all devices and screen sizes for optimal user experience.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🎨</div>
+                    <h3>Modern UI/UX</h3>
+                    <p>Contemporary design principles that create intuitive and visually appealing interfaces.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🤖</div>
+                    <h3>AI-Powered Solutions</h3>
+                    <p>Leverage cutting-edge AI technology to enhance your applications and streamline operations.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">📈</div>
+                    <h3>Continuous Improvement</h3>
+                    <p>Ongoing optimization and updates to ensure your website remains competitive and relevant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss your next project</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:Zakarabduharbo@gmail.com">Zakarabduharbo@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/234802258816" target="_blank">+234 802 258 8161</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Cyberzaks" target="_blank">github.com/Cyberzaks</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Zakariyya Abdullahi</h4>
+                    <p>Computer Science Student | Web Developer | AI Developer</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Cyberzaks" target="_blank" title="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:Zakarabduharbo@gmail.com" title="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/234802258816" target="_blank" title="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-4.98 1.505 9.881 9.881 0 00-3.287 2.963 9.889 9.889 0 00-2.154 4.11 9.87 9.87 0 00-.627 4.85 9.842 9.842 0 00.996 3.823 9.878 9.878 0 002.324 3.115 9.887 9.887 0 003.471 2.166 9.86 9.86 0 004.64.902h.003a9.87 9.87 0 004.988-1.505 9.882 9.882 0 003.287-2.963 9.888 9.888 0 002.154-4.11 9.87 9.87 0 00.627-4.85 9.84 9.84 0 00-.996-3.823 9.878 9.878 0 00-2.324-3.115 9.887 9.887 0 00-3.471-2.166 9.858 9.858 0 00-4.639-.902m0-1.002c.6 0 1.201.05 1.802.15 2.257.31 4.366 1.25 6.065 2.76 1.699 1.51 2.843 3.407 3.235 5.505.392 2.099.26 4.309-.39 6.335-.65 2.025-1.8 3.913-3.323 5.338-1.523 1.425-3.35 2.376-5.334 2.754-1.983.378-4.055.26-6.007-.35-1.951-.608-3.749-1.74-5.127-3.277-1.378-1.537-2.318-3.36-2.704-5.325-.386-1.965-.268-4.044.348-6.037.616-1.993 1.71-3.817 3.162-5.27 1.451-1.453 3.27-2.531 5.27-3.143 1.999-.612 4.073-.737 6.097-.37"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zakariyya Abdullahi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
